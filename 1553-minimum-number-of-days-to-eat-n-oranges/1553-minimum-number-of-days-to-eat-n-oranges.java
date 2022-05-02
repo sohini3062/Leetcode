@@ -1,3 +1,4 @@
+//BFS Solution
 class Solution {
     public int minDays(int n) {
         Queue<Integer> q=new LinkedList<>();
