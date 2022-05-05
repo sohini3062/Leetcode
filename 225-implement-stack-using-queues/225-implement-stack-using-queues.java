@@ -1,3 +1,4 @@
+//implementation using 2 queues
 class MyStack {
     Queue<Integer> q1=new LinkedList<>();
     Queue<Integer> q2=new LinkedList<>();
