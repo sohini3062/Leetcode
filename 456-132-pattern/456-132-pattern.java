@@ -1,4 +1,5 @@
 class Solution {
+    //monotonic stack approach
     class Pair{
         int first;
         int second;
