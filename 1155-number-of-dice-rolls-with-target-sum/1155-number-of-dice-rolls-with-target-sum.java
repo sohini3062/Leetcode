@@ -1,7 +1,7 @@
 class Solution {
     int MOD=1000000007;
     public int numRollsToTarget(int n, int k, int target) {
-        long[][] dp=new long[n+1][target+1];
+        int[][] dp=new int[n+1][target+1];
         /*  dp[i][j]= total number of ways first i dice to make a sum of j
              dp[0][0]=1
             Initialization : All others are 0
@@ -23,7 +23,7 @@ class Solution {
                 }
             }
         }
-        return (int)(dp[n][target]);
+        return dp[n][target];
         
     }
 }
