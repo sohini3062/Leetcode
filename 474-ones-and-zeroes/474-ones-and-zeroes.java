@@ -38,12 +38,12 @@ class Solution {
                     if(j-zeroes>=0 && k-ones>=0)
                         dp[i][j][k]=Math.max(dp[i][j][k],1+dp[i-1][j-zeroes][k-ones]);
                     
-                    ans=Math.max(ans,dp[i][j][k]);
+                    //ans=Math.max(ans,dp[i][j][k]);
                 }
             }
         }
         
-        return ans;
+        return dp[len][m][n];
         
         
     }
