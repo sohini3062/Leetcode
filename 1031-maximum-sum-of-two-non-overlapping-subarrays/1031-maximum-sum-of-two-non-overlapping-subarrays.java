@@ -1,10 +1,11 @@
+// for negative numbers to work use: 
 class Solution {
     public int maxSumTwoNoOverlap(int[] nums, int a, int b) {
         int n=nums.length;
         int[] prefix=new int[n+1];
         prefix[0]=0;
-        int ans=0;
-        int left=0;
+        int ans=Integer.MIN_VALUE;
+        int left=Integer.MIN_VALUE;
 
         for(int i=0;i<n;i++)
         {
@@ -20,7 +21,7 @@ class Solution {
         }
 
         // left->b length right->a length
-        left=0;
+         left=Integer.MIN_VALUE;
         for(int i=b;i+a<=n;i++)
         {
                 left=Math.max(left,prefix[i]-prefix[i-b]);
