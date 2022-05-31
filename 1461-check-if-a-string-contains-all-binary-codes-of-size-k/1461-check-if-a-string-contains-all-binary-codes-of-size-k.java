@@ -3,7 +3,7 @@ class Solution {
         
         if(s.length()<k)
             return false;
-        long p= (long) (Math.pow(2,k));
+        long p= 1<<k;
         Set<String> set=new HashSet<>();
         
         int i=0;
