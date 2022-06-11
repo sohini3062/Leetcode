@@ -31,9 +31,9 @@ class Solution {
     {
         if(ind == 0){
         if(target==0 && a[0]==0)
-            return 2;
+            return dp[ind][target]=2;
         if(target==0 || target == a[0])
-            return 1;
+            return dp[ind][target]=1;
         return 0;
     }
         if(dp[ind][target]!=-1)
