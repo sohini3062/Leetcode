@@ -2,7 +2,7 @@ class Solution {
     // maximum sum of a unique element subarray
     public int maximumUniqueSubarray(int[] nums) {
         
-        Set<Integer> set=new HashSet<>();
+        Set<Integer> set=new LinkedHashSet<>();
         int n=nums.length;
         int i=0;
         int j=0;
