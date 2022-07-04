@@ -21,7 +21,9 @@ class Solution {
              {
                  boolean flag=true;
                 String curr=recipes[i];
-               
+                 
+                 if(!result.contains(curr))
+                 {               
                     
                 List<String> list=ingredients.get(i);
                
@@ -34,6 +36,7 @@ class Solution {
                 }
                 
                 }
+                 }
        
             if(flag==true)
             {
