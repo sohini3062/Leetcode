@@ -1,14 +1,16 @@
 class Solution {
     public List<String> findAllRecipes(String[] recipes, List<List<String>> ingredients, String[] supplies) {
-        //List<String> result=new ArrayList<>();
+
+        //stores recipes formed till now
          HashSet<String> result=new HashSet<>();
         
-        
+        //stores supplies available to see in O(1)
         HashSet<String> supplySet=new HashSet<>();
         for(String s:supplies)
             supplySet.add(s);
-        //System.out.println(supplySet);
-        
+  
+    // Keep iterating till you cannot add new supplies
+    // think what happens when sandwich comes before bread
        boolean keepIterating=true;
         while(keepIterating)
         {
@@ -22,6 +24,7 @@ class Solution {
                  boolean flag=true;
                 String curr=recipes[i];
                  
+                 // if a recipe is already made, no sense to reiterate
                  if(!result.contains(curr))
                  {               
                     
